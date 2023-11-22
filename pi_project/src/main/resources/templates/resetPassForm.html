@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css-password/forgotPassword.css">
+
+    <title>Forgot Password</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/setPass" method="POST">
+            <input name="pass" placeholder="Type a new password" required>
+            <input name="passConfirm" placeholder="Confirm your new password" required>
+            <button>Send</button>
+            <a href="/recover"><button type="button">Back</button></a>
+        </form>
+        <div th:if="${passNotEquals != null}" th:text="${passNotEquals}" class="alert"></div>
+    </div>
+</body>
+</html>

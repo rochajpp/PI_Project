@@ -1,0 +1,7 @@
+@media(max-width: 648px){
+    .functions-input{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}

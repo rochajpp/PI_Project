@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css-password/resetPassword.css">
+
+    <title>Reset Password</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/checkReset" method="POST">
+            <h1>Reset Password</h1>
+            <input type="text" name="login" placeholder="Your username" required>
+            <input type="date" name="birthdate" required>
+            <button>Confirm</button>
+            <a href="/login"><button type="button">Back</button></a>
+        </form>
+        <div th:if="${error != null}" th:text="${error}" class="alert"></div>
+        <div th:if="${overflow != null}" th:text="${overflow}" class="alert"></div>
+    </div>
+</body>
+</html>

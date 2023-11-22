@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+    font-family: sans-serif;
+    background: url("/img/backgroundLogin.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px) brightness(40%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    border-radius: 1rem;
+    padding: 4rem 0;
+    width: 50%;
+    text-align: center;
+}
+
+.input{
+    padding: 0.5rem 0.2rem;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.functions-input{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.checkbox-func{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.functions-input a{
+    font-size: 0.8rem;
+}
+
+.checkbox-func, .checkbox-func input, .checkbox-func label{
+    cursor: pointer;
+}
+
+button{
+    padding: 0.5rem 4rem;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.201);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.201);
+}
+a{
+    color: white;
+}
+
+.alert{
+    color: white;
+    background-color: rgba(255, 71, 71, 0.544);
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+}
+
