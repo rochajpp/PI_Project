@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/css-admin/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/css-admin/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/css-admin/main.css">
+    <link rel="icon" href="/img/icon.png">
+    <title>Admin | AutoCar</title>
+</head>
+<body onload="start()">
+    <header>
+        <div class="header-container">
+            <img class="logo" src="/img/icon.png">
+            <nav>
+                <ul>
+                    <a onclick="Teste()"><li>Cars</li></a>
+                    <a><li>Users</li></a>
+                    <a><li>Report</li></a>
+                    <a href="/exit"><li>Sing out</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <text style="display: none" th:text="${id}" id="idUser">"</text>
+        <div class="main-container">
+            <section class="cars-container">
+                <h1>Cars</h1>
+                <div class="cars">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Brand</th>
+                                <th>Model</th>
+                                <th>Interest</th>
+                                <th>Manufacture Year</th>
+                                <th>Model Year</th>
+                                <th>Register Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="carsBody">
+                        
+                        </tbody>
+                    </table>
+                </div>
+                <a href="/addCar"><button>New car</button></a>
+            </section>
+            <section class="users-container">
+                <h1>Users</h1>
+                <div class="users">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Username</th>
+                                <th>Active</th>
+                                <th>Register Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="usersBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <a href="/addUser"><button>New user</button></a>
+            </section>
+            <section class="report-container">
+                <h1>Report</h1>
+                <a href="/report"><button>Generate report</button></a>
+            </section>
+        </div>
+    </main>
+
+    <script src="/jsData/admin.js"></script>
+</body>
+</html>
