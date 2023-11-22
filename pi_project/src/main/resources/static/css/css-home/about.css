@@ -1,0 +1,22 @@
+#about{
+    background-color: rgba(61, 61, 61, 0.776);
+}
+
+.about-container{
+    padding: 12rem 2rem;
+    text-align: center;
+}
+
+.about-container h1{
+    font-size: 3rem;
+}
+
+.about-container p{
+    font-size: 1.8rem;
+}
+
+.about-container button{
+    padding: 1rem 4rem;
+    color: white;
+    border: 1px solid white;
+}

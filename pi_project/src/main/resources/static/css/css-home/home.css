@@ -1,0 +1,31 @@
+.line{
+    background-color: white;
+    height: 1px;
+    width: 50%;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.home-container{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+.home-container h1{
+    font-size: 6rem;
+}
+
+.home-container p{
+    letter-spacing: 0.5rem
+}

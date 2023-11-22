@@ -1,0 +1,45 @@
+#cars{
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cars-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.car-image{
+    width: 20rem;
+}
+
+.info-car{
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+}
+
+.card button{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card button:hover{
+    background-color: rgb(142, 0, 0);
+}

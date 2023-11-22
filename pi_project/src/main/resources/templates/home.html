@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/css-home/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/css-home/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/css-home/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/css-home/media.css">
+    <link rel="stylesheet" type="text/css" href="/css/css-home/about.css">
+    <link rel="stylesheet" type="text/css" href="/css/css-home/cars.css">
+    <link rel="icon" type="image/png" href="/img/icon.png">
+    <title>Home | AutoCar</title>
+</head>
+<body>
+    <img class="background-main" src="/img/background.jpg">
+    <div class="pop-up">
+        <form action="/interest" method="POST">
+            <h1>Interest</h1>
+            <input style="display: none" name="id" class="idInput">
+            <div class="input-area">
+                <label>Name:</label>
+                <input name="name" type="text" placeholder="Your name">
+            </div>
+            <div class="input-area">
+                <label>Number:</label>
+                <input name="phone" type="number" placeholder="Ex:85912345678">
+            </div>
+            <button>Register</button>
+            <button type="button" onclick="closePopUp()">Back</button>
+        </form>
+    </div>
+    <header>
+        <div class="header-container">
+            <a href="/"><img src="/img/icon.png"></a>
+            <nav>
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#about"><li>ABOUT</li></a>
+                    <a href="#cars"><li>CARS AVAILABLE</li></a>
+                    <a href="#contacts"><li>CONTACTS</li></a>
+                </ul>
+            </nav>
+            <div class="buttons-header">
+                <a href="/login"><button>Enter</button></a>
+            </div>
+            <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <section id="home">        
+            <div class="line"></div>
+            <div class="home-container">        
+                <p>THE BEST CAR LOAN SHOP</p>
+                <h1>YOUR CAR</h1>
+                <p>HERE ARE THE BEST PRICES</p>       
+            </div>     
+            <div class="line"></div>  
+        </section>
+        <section id="about">
+            <div class="about-container">
+                <h1>About</h1>
+                <br>
+                <br>
+                <p>
+                    Hello, we are the AutoCar, we provide the best cars
+                    at the best prices, register on our website and get start
+                    your search for the perfect car. We will provide the best
+                    support for you and help you in every detail.
+                </p>
+                <br>
+                <br>
+                <a href="#cars"><button>Start now!</button></a>
+            </div>
+        </section>
+
+        <section id="cars">
+            <div class="cars-container">
+
+            </div>
+        </section>
+        
+    </div>
+
+    <footer id="contacts">
+        <div class="footer-container">
+            
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="/js/home.js"></script>
+    <script src="/jsData/home.js"></script>
+</body>
+</html>

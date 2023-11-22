@@ -1,0 +1,51 @@
+header{
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.scroll-header header{
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 2rem;
+}
+
+.header-container img{
+    width: 4rem;
+}
+
+.header-container nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.header-container li{
+    list-style: none;
+    transition: 0.4s;
+}
+
+.header-container nav ul a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.header-container li:hover{
+    letter-spacing: 0.2rem;
+}
+
+.buttons-header button{
+    padding: 0.5rem 2rem;
+}

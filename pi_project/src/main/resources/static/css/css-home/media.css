@@ -1,0 +1,39 @@
+@media (max-width: 700px){
+    .header-container nav{
+        display: none;
+    }
+
+    .header-container .buttons-header{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .home-container h1{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 340px){
+    #home{
+        height: 120vh;
+    }
+}
+
+@media(max-width: 918px){
+    .background-main{
+        height: 100vh;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(min-width: 918px){
+    .background-main{
+        width: 100vw;
+    }
+}
