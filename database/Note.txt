@@ -1,0 +1,70 @@
+Português:
+
+Pasta de criação e configuração do banco de dados.
+
+
+Caso exista um Application.sql não execute ele.
+
+
+Antes de executar os comandos crie em seu MySQL um banco de dados chamado autocar.
+
+
+Em seguida baixe as extensões: SQLTools de Matheus Teixeira e SQLTools MYSQL/MariaDB/TiDB
+também de Matheus Teixeira.
+
+
+Em seguida clique no ícone de banco de dados na barra do vs code co canto esquerdo, que surgiu
+com a instalação da extensão MySQLTools.
+
+
+Clique em criar uma conexão e escolha MySQL, em seguida dê um nome qualquer à conexão e
+em database digite autocar que é o nome o banco de dados que você criou, em user digite
+root conecte com o banco de dados.
+
+
+Em seguida o vs code irá pedia a senha do seu MySQL, digite e aparte enter.
+
+
+Pronto, conexão com o banco de dados efetuada.
+
+
+Depois da criação do banco de dados execute todas as linhas de CreateTable.sql e
+em seguida todas as linhas de InsertCarsBD.sql.
+
+OBS: caso a aplicação falhe, é necessário mudar o "spring.datasource.password", localizado no "application.properties", para a senha do banco de dados do seu computador.
+
+
+Inglês: 
+
+Database creation and configuration folder.
+
+
+If an Application.sql file exists, do not execute it.
+
+
+Before running the commands, create a database in your MySQL called "autocar."
+
+
+Next, download the extensions: SQLTools by Matheus Teixeira and SQLTools MYSQL/MariaDB/TiDB, 
+also by Matheus Teixeira.
+
+
+Then, click on the database icon in the VS Code toolbar on the left-hand side, which appeared 
+with the installation of the MySQLTools extension.
+
+
+Click on "Create Connection" and choose MySQL. Give the connection any name you like. In the 
+"Database" field, enter "autocar," which is the name of the database you created. In the "User"
+field, enter "root" and connect to the database.
+
+
+Next, VS Code will prompt you for your MySQL password. Enter it and press Enter.
+
+
+There you go, the database connection has been established.
+
+
+After creating the database, execute all the lines in CreateTable.sql, and then execute all 
+the lines in InsertCarsBD.sql.
+
+NOTE: if the application fails, it is necessary to change the "spring.datasource.password", located in "application.properties", to the password for your computer's database.
