@@ -122,7 +122,7 @@ public class AdminController {
             String dirProject = System.getProperty("user.dir");
 
             try{
-                String dirUploadImage = dirProject + "\\pi_project\\src\\main\\resources\\static\\img";
+                String dirUploadImage = dirProject + "\\src\\main\\resources\\static\\img";
                 File dir = new File(dirUploadImage);
                 if(!dir.exists()){
                     dir.mkdirs();
@@ -159,7 +159,8 @@ public class AdminController {
             String dirProject = System.getProperty("user.dir");
 
             try{
-                String dirUploadImage = dirProject + "\\pi_project\\src\\main\\resources\\static\\img";
+            	
+                String dirUploadImage = dirProject + "\\src\\main\\resources\\static\\img";
                 File dir = new File(dirUploadImage);
                 if(!dir.exists()){
                     dir.mkdirs();

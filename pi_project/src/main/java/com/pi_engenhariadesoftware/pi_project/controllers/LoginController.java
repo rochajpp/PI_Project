@@ -36,19 +36,21 @@ public class LoginController {
    @PostMapping("/checkLogin")
    public String checkLogin(Model model, User userParam, HttpServletResponse response) throws IOException{
         User user = this.userRepository.login(userParam.getLogin(), userParam.getPassword());
-        if(!user.getActive()){
-          model.addAttribute("disabled", "User disabled, contact your administrator!");
-          return "login";
-        }
-
+        
         if(user != null){
+        	if(!user.getActive()){
+                model.addAttribute("disabled", "User disabled, contact your administrator!");
+                return "login";
+            }
+        	
             CookieService.setCookie(response, "userId", Integer.toString(user.getId()), 3600);
             CookieService.setCookie(response,"userName", user.getName(), 3600 );
             return "redirect:/admin";
         }
-        model.addAttribute("error", "Invalid credentials");
-
-        return "login";
+        
+	    model.addAttribute("error", "Invalid credentials");	
+	    return "login";
+       
    }
 
    @GetMapping("/exit")
