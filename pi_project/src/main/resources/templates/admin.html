@@ -15,9 +15,9 @@
             <img class="logo" src="/img/icon.png">
             <nav>
                 <ul>
-                    <a onclick="Teste()"><li>Cars</li></a>
-                    <a><li>Users</li></a>
-                    <a><li>Report</li></a>
+                    <a><li>Cars</li></a>
+                    <a href="#users"><li>Users</li></a>
+                    <a href="#report"><li>Report</li></a>
                     <a href="/exit"><li>Sing out</li></a>
                 </ul>
             </nav>
@@ -50,7 +50,7 @@
                 </div>
                 <a href="/addCar"><button>New car</button></a>
             </section>
-            <section class="users-container">
+            <section id="users" class="users-container">
                 <h1>Users</h1>
                 <div class="users">
                     <table>
@@ -72,7 +72,7 @@
                 </div>
                 <a href="/addUser"><button>New user</button></a>
             </section>
-            <section class="report-container">
+            <section id="report" class="report-container">
                 <h1>Report</h1>
                 <a href="/report"><button>Generate report</button></a>
             </section>
