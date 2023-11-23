@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/css-user/styleAdd.css">
+    <link rel="icon" href="/img/icon.png">
+    <title>New user</title>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+           
+            <form action="/saveUser" method="POST">
+                <h1>New User</h1>
+                <div class="input-area">
+                    <label>Name:</label>
+                    <input name="name" required/>
+                </div>
+                <div class="input-area">
+                    <label>Login:</label>
+                    <input name="login" required/>
+                </div>
+                <div class="input-area">
+                    <label>Password:</label>
+                    <input type="password" name="password" required/>
+                </div>
+                <div class="input-area">
+                    <label>Birth Date:</label>
+                    <input type="date" name="birthDate" required/>
+                </div>
+                <button>Save</button>
+                <a href="/admin"><button type="button">Back</button></a>
+                <div th:if="${error != null}" th:text="${error}" class="alert"></div>
+            </form>
+           
+        </div>
+    </main>
+</body>
+</html>

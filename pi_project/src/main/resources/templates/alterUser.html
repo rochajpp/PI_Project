@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/css-user/style.css">
+    <link rel="icon" href="/img/icon.png">
+    <title>Alter User</title>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            
+            <form action="/setUser" method="POST">
+                <h1>User</h1>
+                <div class="input-area">
+                    <label>ID:</label>
+                    <input name="id" th:value="${id}" readonly>
+                </div>
+                <div class="input-area">
+                    <label>Login:</label>
+                    <input name="login" th:value="${login}">
+                </div>
+                <div class="input-area">
+                    <label>Name:</label>
+                    <input name="name" th:value="${name}">
+                </div>
+                <div>
+                    <label>Active:</label>
+                    <input type="checkbox" name="active" th:checked="${active}">
+                </div>
+                <div class="input-area">
+                    <label>Birth Date:</label>
+                    <input type="date" name="birthDate" th:value="${birthdate}">
+                </div>
+                <div class="input-area">
+                    <label>Register Date:</label>
+                    <input type="date" name="registerDate" th:value="${registerdate}">
+                </div>
+
+                <button>Save</button>
+                <a href="/admin"><button type="button">Back</button></a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
