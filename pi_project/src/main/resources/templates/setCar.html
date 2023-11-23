@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/css-setCar/setCar.css">
+    <link rel="icon" href="/img/icon.png">
+    <title>Set car</title>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <form action="/setCarSys" method="POST" enctype="multipart/form-data">
+                <div class="input-area">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" style="text-align: center" th:value="${id}" readonly>
+                </div>
+            
+                <div class="input-area">
+                    <label for="brand">Brand:</label>
+                    <input type="text" id="brand" name="brand" th:value="${brand}">
+                </div>
+            
+                <div class="input-area">
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model" th:value="${model}">
+                </div>
+            
+                <div class="input-area">
+                    <label for="value">Value:</label>
+                    <input type="text" id="value" name="value" th:value="${value}">
+                </div>
+            
+                <div class="input-area">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="8" cols="40" th:text="${description}"></textarea>
+                </div>
+            
+                <div class="input-area">
+                    <label>Image:</label>
+                    <img th:src="${image}">
+                    <input type="file" name="file" accept="image/*">
+                </div>
+            
+                <div class="input-area">
+                    <label for="manufactureYear">Manufacture Year:</label>
+                    <input type="text" id="manufactureYear" name="manufactureYear" th:value="${manufactureYear}">
+                </div>
+            
+                <div class="input-area">
+                    <label for="modelYear">Model Year:</label>
+                    <input type="text" id="modelYear" name="modelYear" th:value="${modelYear}">
+                </div>
+            
+                <button type="submit">Set Car</button>
+                
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/css-setCar/setCar.css">
+    <link rel="icon" href="/img/icon.png">
+    <title>Add Car</title>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <div th:if="${error != null}" th:text="${error}" class="alert"></div>
+            <h1>New Car</h1>
+            <br>
+            <form action="/saveCar" method="POST" enctype="multipart/form-data">
+                <div class="input-area">
+                    <label>Brand:</label>
+                    <input type="text" name="brand" required/>
+                </div>
+                <div class="input-area">
+                    <label>Model:</label>
+                    <input type="text" name="model" required/>
+                </div>
+                <div class="input-area">
+                    <label>Value:</label>
+                    <input type="number" name="value" required/>
+                </div>
+                <div class="input-area">
+                    <label>Description:</label>
+                    <textarea name="description" rows="8" cols="40" required></textarea>
+                </div>
+                <div class="input-area">
+                    <label>Image:</label>
+                    <input type="file" name="file" accept="image/*" required/>
+                </div>
+                <div class="input-area">
+                    <label>Manufacture Year:</label>
+                    <input type="number" name="manufactureYear" required/>
+                </div>
+                <div class="input-area">
+                    <label>Model Year:</label>
+                    <input type="number" name="modelYear" required/>
+                </div>
+                <br>
+                <button>Add Car</button>
+                <a href="/admin"><button type="button">Back</button></a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
