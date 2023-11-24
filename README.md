@@ -197,4 +197,4 @@ Abaixo seguem os tipos de importância dos requisitos:
 </table>
 
 <h2>Diagrama de Classe</h2>
-<img src="https://www.imagemhost.com.br/image/JTaX">
+<a href="https://ibb.co/gmYH6d4"><img src="https://i.ibb.co/BckdwGn/diagrama-de-classe.jpg" alt="diagrama-de-classe" border="0"></a>
