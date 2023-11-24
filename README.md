@@ -8,6 +8,55 @@ Este projeto visa o desenvolvimento de um sistema de reserva de carros implement
 
 Na área administrativa, acessível após login, será implementado um CRUD para gerenciamento de usuários e carros, contendo variáveis específicas como id, login, senha, nome, entre outras. Haverá também uma funcionalidade para geração de relatório em PDF dos carros com interesse demonstrado, além de uma funcionalidade para liberar carros reservados, retornando-os à lista pública sem apagar o histórico de interesses. A documentação incluirá um relatório detalhando as tecnologias utilizadas, o diagrama de classes e a contribuição de cada membro da equipe no projeto.
 
+<h2>Atribuição de tarefas</h2>
+<table>
+  
+  <tr>
+    <td align="center"> Nome </td>
+    <td align="center"> Atividade </td>
+  </tr>
+
+  <tr>
+    <td>Lucas</td>
+    <td>
+      <p>- Criação das Entidades "Car", "User" e "Report". </p>
+      <p>- Adicionar arquivos SQL para o Database.</p>
+      <p>- Criação de repositórios.</p>
+      <p>- Configuração de repositórios.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Guilherme</td>
+    <td>
+      <p>- Configuração de pastas estáticas de CSS e estilização da página. </p>
+      <p>- Criação da página Admin e estilização.</p>
+      <p> - Estilização das páginas alterUser e addUser.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>João Paulo</td>
+    <td>
+      <p>- Adicionar HomeController.</p>
+      <p>- Criação e configuração do método getCookie.</p>
+      <p>- Adicionar e configurar sistema de Interceptor.</p>
+      <p>- Tratação de dados para a API.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>André</td>
+    <td>
+      <p>- Criação da API de lista de "Cars" e "Users".</p>
+      <p>- Criação do LoginController e método de login.</p>
+      <p>- Criação de controller Admin.</p>
+      <p>- Documento de Requisitos.</p>
+    </td>
+  </tr>
+  
+</table>
+
 <h2> Sobre o documento </h2>
 Abaixo seguem os tipos de importância dos requisitos:
 
