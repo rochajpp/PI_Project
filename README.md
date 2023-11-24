@@ -242,7 +242,35 @@ Abaixo seguem os tipos de importância dos requisitos:
      </td>
   </tr>
   <tr>
+</table>
 
+<h2>Requisitos não funcionais</h2>
+<table>
+  <tr>
+    <td align="center">Nome</td>
+    <td>Descrição</td>
+  </tr>
+
+  <tr>
+    <td align="center">InterceptorAppConfig</td>
+    <td> Adicionar interceptores para cada rota. </td>
+  </tr>
+
+  <tr>
+    <td align="center">LoginInterceptor</td>
+    <td> Componente que implementa HandlerInterceptor, que tem como pre-handle verificar se há um cookie para acessar a rota. </td>
+  </tr>
+
+  <tr>
+    <td align="center">ResetPassInterceptor</td>
+    <td> Componente que implementa HandlerInterceptor, que tem como pre-handle verificar se há um cookie para acessar a rota. </td>
+  </tr>
+
+  <tr>
+    <td align="center">CookieService</td>
+    <td> Possui métodos de obter e alterar cookies. </td>
+  </tr>
+  
 </table>
 
 <h2>Diagrama de Classe</h2>
