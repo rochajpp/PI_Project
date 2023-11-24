@@ -31,7 +31,7 @@ Na área administrativa, acessível após login, será implementado um CRUD para
     <td>
       <p>- Configuração de pastas estáticas de CSS e estilização da página. </p>
       <p>- Criação da página Admin e estilização.</p>
-      <p> - Estilização das páginas alterUser e addUser.</p>
+      <p>- Estilização das páginas alterUser e addUser.</p>
     </td>
   </tr>
 
@@ -54,7 +54,49 @@ Na área administrativa, acessível após login, será implementado um CRUD para
       <p>- Documento de Requisitos.</p>
     </td>
   </tr>
-  
+</table>
+
+<h2>Tecnologias utilizadas</h2>
+<table>
+  <tr>
+    <td align="center"> Tecnologia </td>
+    <td align="center"> Descrição </td>
+  </tr>
+
+  <tr>
+    <td align="center"> Java </td>
+    <td> Linguagem utilizada para estruturação do back-end. </td>
+  </tr>
+
+  <tr>
+    <td align="center"> SpringBoot </td>
+    <td> Framework que utiliza Java como base, para ter uma comunicação mais eficiente do Java com o TomCat. </td>
+  </tr>
+
+  <tr>
+    <td align="center"> TomCat </td>
+    <td> Usado para construir e executar aplicativos de forma a não comprometer a estabilidade do servidor. </td>
+  </tr>
+
+  <tr>
+    <td align="center"> HTML </td>
+    <td> Linguagem de Marcação de HiperTexto. </td>
+  </tr>
+
+  <tr>
+    <td align="center"> CSS </td>
+    <td> Estilização de páginas, usando como base o HTML. </td>
+  </tr>
+
+  <tr>
+    <td align="center"> JavaScript </td>
+    <td> Adição da lógica do front-end, que se comunicará com o HTML e o CSS. </td>
+  </tr>
+
+  <tr>
+    <td align="center"> EclipseIDE </td>
+    <td>IDE utilizada para o desenvolvimento do software.</td>
+  </tr>
 </table>
 
 <h2> Sobre o documento </h2>
