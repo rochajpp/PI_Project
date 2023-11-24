@@ -195,3 +195,6 @@ Abaixo seguem os tipos de importância dos requisitos:
   <tr>
 
 </table>
+
+<h2>Diagrama de Classe</h2>
+<img src="https://www.imagemhost.com.br/image/JTaX">
